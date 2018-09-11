@@ -1,0 +1,15 @@
+﻿This file was created in order to inform of the few commands that are available and processed by the controller in the API.
+
+Address: /api/products
+
+GET on /api/products will return the complete list inside the db in ascending order
+
+GET /api/products/{id} will return the details of the item with the id selected
+
+POST /api/products with {"Name":"PlaceholderName","Description":"PlaceholderDescription","Category":"PlaceholderCategory","Stock":"NumberPlaceholder","Price":"CostPlaceholder"} 
+will create a new item in the table if the conditions are met
+
+PUT /api/products/{id} {"Id":{Id},"Name":"PlaceholderName","Description":"PlaceholderDescription","Category":"PlaceholderCategory","Stock":"NumberPlaceholder","Price":"CostPlaceholder"}
+will change information of specified id item in case conditions are met
+
+DELETE /api/products/{id} will delete the specified id from the table
